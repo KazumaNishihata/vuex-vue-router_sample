@@ -2,10 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 
-import topPage from './pages/top'
-import editPage from './pages/edit'
-import createPage from './pages/create'
-import deletePage from './pages/delete'
+import topPage from './pages/TopPage'
+import editPage from './pages/EditPage'
+import createPage from './pages/CreatePage'
+import deletePage from './pages/DeletePage'
 
 Vue.use(VueRouter)
 
