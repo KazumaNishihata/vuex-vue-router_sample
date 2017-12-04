@@ -13,13 +13,13 @@ import router from '../router'
 
 export default {
   computed: {
-    todo(){
-      return this.$store.state.todos.filter( (v,i) => i===this.$store.state.route.params.id-0).toString()
+    todo() {
+      return this.$store.getters.todo(this.$store.state.route.params.id)
     }
   },
   methods: {
     deleteTodo() {
-      this.$store.commit('deleteTodo',store.state.route.params.id)
+      this.$store.commit('deleteTodo',this.$store.state.route.params.id)
       this.back()
     },
     back() {

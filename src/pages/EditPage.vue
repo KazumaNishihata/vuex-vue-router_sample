@@ -19,8 +19,8 @@ export default {
     }
   },
   computed: {
-    todo(){
-      return this.$store.state.todos.filter( (v,i) => i===this.$store.state.route.params.id-0).toString()
+    todo() {
+      return this.$store.getters.todo(this.$store.state.route.params.id)
     }
   },
   methods: {

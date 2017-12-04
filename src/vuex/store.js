@@ -11,6 +11,9 @@ const store = new Vuex.Store({
   	addTodo    : (state, text)  => state.todos.push(text),
   	editTodo   : (state, param) => state.todos = state.todos.map( (v,i) => i===param.id ? param.text: v) ,
     deleteTodo : (state, id) => state.todos.splice(id,1),
+  },
+  getters: {
+    todo: state => id => state.todos.filter( (v,i) => i === id-0).toString()
   }
 })
 
