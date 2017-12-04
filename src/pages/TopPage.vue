@@ -12,12 +12,10 @@
 </template>
 
 <script>
-import store from '../vuex/store'
-
 export default {
   computed: {
     todos () {
-      return store.state.todos
+      return this.$store.state.todos
     }
   },
 }

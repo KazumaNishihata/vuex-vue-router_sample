@@ -9,18 +9,17 @@
 </template>
 
 <script>
-import store from '../vuex/store'
 import router from '../router'
 
 export default {
   computed: {
     todo(){
-      return store.state.todos.filter( (v,i) => i===store.state.route.params.id-0).toString()
+      return this.$store.state.todos.filter( (v,i) => i===this.$store.state.route.params.id-0).toString()
     }
   },
   methods: {
     deleteTodo() {
-      store.commit('deleteTodo',store.state.route.params.id)
+      this.$store.commit('deleteTodo',store.state.route.params.id)
       this.back()
     },
     back() {

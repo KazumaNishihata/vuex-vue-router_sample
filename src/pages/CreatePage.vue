@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import store from '../vuex/store'
 import router from '../router';
 
 export default {
@@ -20,7 +19,7 @@ export default {
   },
   methods: {
     addTodo() {
-      store.commit('addTodo',this.todoText)
+      this.$store.commit('addTodo',this.todoText)
       this.back();
     },
     back() {

@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import store from '../vuex/store'
 import router from '../router'
 
 export default {
@@ -21,14 +20,14 @@ export default {
   },
   computed: {
     todo(){
-      return store.state.todos.filter( (v,i) => i===store.state.route.params.id-0).toString()
+      return this.$store.state.todos.filter( (v,i) => i===this.$store.state.route.params.id-0).toString()
     }
   },
   methods: {
     editTodo() {
-      store.commit('editTodo',{
+      this.$store.commit('editTodo',{
         text: this.editedText,
-        id: store.state.route.params.id}
+        id: this.$store.state.route.params.id}
       )
       this.back()
     },
@@ -38,7 +37,7 @@ export default {
   },
   created(){
     this.id = this.$route.params.id-0;
-    this.defaultText =  this.editedText = store.state.todos.filter( (v,i) => i===this.id).toString()
+    this.defaultText =  this.editedText = this.$store.state.todos.filter( (v,i) => i===this.id).toString()
   }
 }
 </script>
