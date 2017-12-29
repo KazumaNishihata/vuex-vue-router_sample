@@ -1,19 +1,20 @@
 import Vue from 'vue'
 import router from '../router'
+import Component from 'vue-class-component'
 
-export default Vue.extend({
-  data () {
-    return {
-      todoText: ''
-    }
-  },
-  methods: {
-    addTodo() {
-      this.$store.commit('addTodo',this.todoText)
-      this.back();
-    },
-    back() {
-      router.push('/')
-    }
-  }
+@Component({
+  name: 'delete-page'
 })
+export default class DeletePage extends Vue {
+
+  todoText:string;
+
+  addTodo() {
+    this.$store.commit('addTodo',this.todoText)
+    this.back();
+  }
+
+  back() {
+    router.push('/')
+  }
+}
