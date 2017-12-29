@@ -6,18 +6,8 @@
   </div>
 </template>
 
-<script lang="ts">
-import HeaderView from './components/Header.vue'
-import FooterView from './components/Footer.vue'
+<script lang="ts" src="./App.ts"></script>
 
-export default {
-  components: {
-    HeaderView,
-    FooterView
-  }
-}
-</script>
-
-<style>
+<style scoped>
 
 </style>

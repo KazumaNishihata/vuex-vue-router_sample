@@ -8,27 +8,6 @@
   </main>
 </template>
 
-<script lang="ts">
-import router from '../router';
+<script lang="ts" src="./CreatePage.ts"></script>
 
-export default {
-  data () {
-    return {
-      todoText: ''
-    }
-  },
-  methods: {
-    addTodo() {
-      this.$store.commit('addTodo',this.todoText)
-      this.back();
-    },
-    back() {
-      router.push('/')
-    }
-  }
-}
-</script>
-
-<style>
-
-</style>
+<style></style>

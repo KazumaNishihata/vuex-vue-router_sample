@@ -11,16 +11,6 @@
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  computed: {
-    todos () {
-      return this.$store.state.todos
-    }
-  },
-}
-</script>
+<script lang="ts" src="./TopPage.ts"></script>
 
-<style>
-
-</style>
+<style></style>

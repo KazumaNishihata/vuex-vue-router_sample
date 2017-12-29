@@ -8,27 +8,6 @@
   </main>
 </template>
 
-<script lang="ts">
-import router from '../router'
+<script lang="ts" src="./DeletePage.ts"></script>
 
-export default {
-  computed: {
-    todo() {
-      return this.$store.getters.todo(this.$store.state.route.params.id)
-    }
-  },
-  methods: {
-    deleteTodo() {
-      this.$store.commit('deleteTodo',this.$store.state.route.params.id)
-      this.back()
-    },
-    back() {
-      router.push('/')
-    }
-  }
-}
-</script>
-
-<style>
-
-</style>
+<style></style>
