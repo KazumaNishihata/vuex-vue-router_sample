@@ -6,9 +6,9 @@
   </div>
 </template>
 
-<script>
-import HeaderView from './components/Header'
-import FooterView from './components/Footer'
+<script lang="ts">
+import HeaderView from './components/Header.vue'
+import FooterView from './components/Footer.vue'
 
 export default {
   components: {

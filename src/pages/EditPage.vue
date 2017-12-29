@@ -9,7 +9,7 @@
   </main>
 </template>
 
-<script>
+<script lang="ts">
 import router from '../router'
 
 export default {
@@ -37,7 +37,7 @@ export default {
   },
   created(){
     this.id = this.$route.params.id-0;
-    this.defaultText =  this.editedText = this.$store.state.todos.filter( (v,i) => i===this.id).toString()
+    this.defaultText =  this.editedText = this.$store.state.todos.filter( (v: string ,i:number ) => i===this.id).toString()
   }
 }
 </script>

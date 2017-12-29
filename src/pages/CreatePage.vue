@@ -8,7 +8,7 @@
   </main>
 </template>
 
-<script>
+<script lang="ts">
 import router from '../router';
 
 export default {

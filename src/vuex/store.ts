@@ -13,7 +13,7 @@ const store = new Vuex.Store({
     deleteTodo : (state, id) => state.todos.splice(id,1),
   },
   getters: {
-    todo: state => id => state.todos.filter( (v,i) => i === id-0).toString()
+    todo: state => (id: number) => state.todos.filter( (v,i) => i === id-0).toString()
   }
 })
 
