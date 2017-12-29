@@ -5,7 +5,7 @@ import Component from 'vue-class-component'
   name: 'top-page'
 })
 export default class TopPage extends Vue {
-  get todos () {
+  get todos() {
     return this.$store.state.todos
   }
 }

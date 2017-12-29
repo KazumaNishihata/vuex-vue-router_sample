@@ -11,12 +11,12 @@ export default class DeletePage extends Vue {
     return this.$store.getters.todo(this.$store.state.route.params.id)
   }
 
-  deleteTodo() {
-    this.$store.commit('deleteTodo',this.$store.state.route.params.id)
+  private deleteTodo() {
+    this.$store.commit('deleteTodo', this.$store.state.route.params.id)
     this.back()
   }
 
-  back() {
+  private back() {
     router.push('/')
   }
 

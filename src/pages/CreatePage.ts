@@ -7,14 +7,14 @@ import Component from 'vue-class-component'
 })
 export default class DeletePage extends Vue {
 
-  todoText:string;
+  private todoText: string;
 
-  addTodo() {
-    this.$store.commit('addTodo',this.todoText)
+  private addTodo() {
+    this.$store.commit('addTodo', this.todoText)
     this.back();
   }
 
-  back() {
+  private back() {
     router.push('/')
   }
 }

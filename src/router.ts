@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import App from './App.vue'
 import VueRouter from 'vue-router'
 
+import App from './App.vue'
 import topPage from './pages/TopPage.vue'
 import editPage from './pages/EditPage.vue'
 import createPage from './pages/CreatePage.vue'

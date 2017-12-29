@@ -7,8 +7,8 @@ import store from './vuex/store'
 sync(store, router)
 
 new Vue({
-  el: '#app',
-  router,
-  store,
-  render: h => h(App)
+  el: '#app' ,
+  router ,
+  store ,
+  render: (h) => h(App)
 })

@@ -1,0 +1,26 @@
+{
+  "extends": "tslint:latest",
+  "rules": {
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ],
+    "semicolon": [
+      false
+    ],
+    "trailing-comma": [
+      false
+    ],
+    "ordered-imports": [
+      false
+    ],
+    "object-literal-sort-keys": [
+      false
+    ],
+    "no-unused-expression": [
+      true,
+      "allow-new"
+    ]
+  }
+}
